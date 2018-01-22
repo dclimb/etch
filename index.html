@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+</head>
+<body>
+	<div id="container">
+	</div>
+</body>
+
+<script type="text/javascript">
+
+
+
+	for (var i = 1; i < 257; i++) {
+		var unit = document.createElement("div");
+		unit.classList.add("unit")	
+		document.getElementById('container').appendChild(unit);
+
+		unit.addEventListener("click", function (e) {
+		unit.classList.add("hoverUnit")
+		});
+	
+		if (i%16 ==0) {
+			var br = document.createElement("BR");
+			document.getElementById("container").appendChild(br);
+		} 
+	}
+	
+</script>
+</html>
