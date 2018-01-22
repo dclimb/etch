@@ -18,9 +18,10 @@
 		unit.classList.add("unit")	
 		document.getElementById('container').appendChild(unit);
 
-		unit.addEventListener("click", function (e) {
-		unit.classList.add("hoverUnit")
-		});
+		unit.addEventListener("mouseover", function (e) {
+		e.target.style.background = "blue";
+		})
+
 	
 		if (i%16 ==0) {
 			var br = document.createElement("BR");
